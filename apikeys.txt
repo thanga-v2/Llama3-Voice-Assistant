@@ -1,0 +1,13 @@
+groq -
+https://console.groq.com/keys
+
+
+openai api key -
+https://platform.openai.com/api-keys
+
+
+google generative ai api key -
+https://aistudio.google.com/app/apikey
+
+
+pyttsx3 - text to speech
