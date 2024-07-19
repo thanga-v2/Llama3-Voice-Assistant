@@ -1,0 +1,22 @@
+ ON MAC
+
+ brew install portaudio
+
+ pip install pyaudio
+
+Log -
+
+DEPRECATION: Loading egg at /Users/thangaraj/miniconda3/lib/python3.12/site-packages/pymeshlab-2023.12.post1-py3.12.egg is deprecated. pip 24.3 will enforce this behaviour change. A possible replacement is to use pip for package installation.. Discussion can be found at https://github.com/pypa/pip/issues/12330
+Collecting pyaudio
+  Using cached PyAudio-0.2.14.tar.gz (47 kB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Building wheels for collected packages: pyaudio
+  Building wheel for pyaudio (pyproject.toml) ... done
+  Created wheel for pyaudio: filename=PyAudio-0.2.14-cp312-cp312-macosx_11_0_arm64.whl size=24120 sha256=5f743af1c829ac6e1fb593b79cf529e9301c2987c7ba0880bebd441070dceed1
+  Stored in directory: /Users/thangaraj/Library/Caches/pip/wheels/68/c7/33/c6a6b210cb5819ec5c219928c794a447742a7d86d21c0b92e6
+Successfully built pyaudio
+
+Done.
+
