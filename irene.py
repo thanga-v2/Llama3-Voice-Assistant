@@ -5,6 +5,9 @@ from dotenv import load_dotenv
 # need to take the imagegrab class from PIL (for screenshots)
 from PIL import ImageGrab
 import cv2
+import pyperclip
+
+
 webcam = cv2.VideoCapture(0)
 
 load_dotenv()
@@ -68,7 +71,15 @@ def webcam_capture():
 
 
 def get_clipboard_text():
-    return None
+    clipboard_content = pyperclip.paste()
+    if isinstance(clipboard_content, str):
+        return clipboard_content
+    else:
+        print("Nothing to copy from the clip board")
+        return None
+
+
+# print(get_clipboard_text())
 
 
 prompt = input('USER: ')
