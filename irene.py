@@ -4,6 +4,8 @@ from groq import Groq
 from dotenv import load_dotenv
 # need to take the imagegrab class from PIL (for screenshots)
 from PIL import ImageGrab
+import cv2
+webcam = cv2.VideoCapture(0)
 
 load_dotenv()
 
@@ -53,7 +55,16 @@ def take_screenshot():
     rgb_screenshot.save(path, quality = 15)
 
 def webcam_capture():
-    return None
+    if not webcam.isOpened():
+        print('Error: Not Successfully opened. Exit')
+        exit()
+
+    else:
+        print("Stay still,, Say cheese !")
+
+    path='webcam.jpg'
+    ret, frame = webcam.read()
+    cv2.imwrite(path, frame)
 
 
 def get_clipboard_text():
